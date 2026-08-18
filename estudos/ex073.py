@@ -4,15 +4,16 @@ tabela = ('Palmeiras', 'Flamengo', 'CA-Paranaense', 'Fluminence', 'Bahia', 'Brag
 while True:
     num = int(input('Quantos colocados você quer ver ? '))
     #verificando os primeiros 4 colocados
-    for pos,posicao in enumerate(tabela):
-        print(f'Os {num} primeiros colocados são {posicao} {pos+1}° colocado')
+    print(f'Os {num} primeiros colocados são: ')
+    for pos,time in enumerate(tabela):
+        print(f'{time} {pos+1}° colocado')
         if pos == (num-1):
             break
     print('-=' * 30)
     co = 0
     l = 16
-    #verificando os ultimos 4 colocados
-    for pos,posicao in enumerate(tabela):
+    #verificando os ultimos 4 colocados, poderia ser feito print(tabela[-4:])
+    for pos,time in enumerate(tabela):
         print(f'Os {l+1}° colocado é {tabela[l]}')
         l += 1
         co += 1
@@ -22,9 +23,10 @@ while True:
     print('-=' * 30)
     print(sorted(tabela))
     print('-=' * 30)
-    time = str(input('Qual time vc quer ver ? '))
-    for pos,posicao in enumerate(tabela):
-        if posicao == time:
-            print(f'O {posicao} está em {pos+1}° Lugar')
+    #para ver a posição de um time especifico, poderia usar print(tabela.index('Palmeiras')+1) mas assim fica mais dinamico
+    time1 = str(input('Qual time vc quer ver ? '))
+    for pos,time in enumerate(tabela):
+        if time == time1:
+            print(f'O {time} está em {pos+1}° Lugar')
             break
     break
