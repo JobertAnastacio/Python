@@ -3,6 +3,7 @@ tabela = ('Palmeiras', 'Flamengo', 'CA-Paranaense', 'Fluminence', 'Bahia', 'Brag
           'Gremio', 'Vasco', 'Remo', 'Chapecoense')
 while True:
     num = int(input('Quantos colocados você quer ver ? '))
+    #verificando os primeiros 4 colocados
     for pos,posicao in enumerate(tabela):
         print(f'Os {num} primeiros colocados são {posicao} {pos+1}° colocado')
         if pos == (num-1):
@@ -10,12 +11,14 @@ while True:
     print('-=' * 30)
     co = 0
     l = 16
+    #verificando os ultimos 4 colocados
     for pos,posicao in enumerate(tabela):
         print(f'Os {l+1}° colocado é {tabela[l]}')
         l += 1
         co += 1
         if co == (4):
             break
+    #Olhando a ordem alfabetica
     print('-=' * 30)
     print(sorted(tabela))
     print('-=' * 30)
