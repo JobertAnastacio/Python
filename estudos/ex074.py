@@ -19,3 +19,11 @@ for es in num:
 print('\n')
 print(f'O maior valor foi {maior}')
 print(f'o menor valor foi {menor}')
+
+#outra forma de fazer o mesmo código é:
+
+from random import randint
+n = (randint(1,10), randint(1,10), randint(1,10), randint(1,10), randint(1,10))
+print(f'Os valores osrteados foram {n}')
+print(f'O maior valor foi {max(n)}')
+print(f'O menor valor foi {min(n)}')
