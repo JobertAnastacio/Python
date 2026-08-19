@@ -3,7 +3,7 @@ tabela = ('Palmeiras', 'Flamengo', 'CA-Paranaense', 'Fluminence', 'Bahia', 'Brag
           'Gremio', 'Vasco', 'Remo', 'Chapecoense')
 while True:
     num = int(input('Quantos colocados você quer ver ? '))
-    #verificando os primeiros 4 colocados
+    #verificando os primeiros colocados
     print(f'Os {num} primeiros colocados são: ')
     for pos,time in enumerate(tabela):
         print(f'{time} {pos+1}° colocado')
