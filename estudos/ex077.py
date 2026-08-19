@@ -1,4 +1,4 @@
-palavras = ('aprender', 'programar', 'linguagem', 'python','futuro','escola','lixo' )
+palavras = ('aprender', 'programar', 'linguagem', 'python','futuro','escola','lixo','casa','carro','computador')
 for c in range(0,len(palavras)):
     print(f'\nNa palavra {palavras[c].upper()} temos: ',end=' ')
     for v in range(0,len(palavras[c])):
