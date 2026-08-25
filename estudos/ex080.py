@@ -1,3 +1,4 @@
+#imcompleto
 num = list()
 for val in range(0,5):
     num.append(int(input('Digite um valor: ')))
