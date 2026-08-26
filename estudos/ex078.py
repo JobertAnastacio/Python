@@ -1,20 +1,15 @@
 valores = list()
-ct = maior= menor = pp = pg =  0
+ct = maior = menor =  0
 for val in range(0,5):
     valores.append(int(input(f'Digite um valor para a posição {val}: ')))
-for pos,v in enumerate(valores):
     if ct == 0:
-        pg = pos
-        pp = pos
-        maior = v
-        menor = v
+        maior = valores[val]
+        menor = valores[val]
     else:
-        if v > maior:
-            maior = v
-            pg = pos
-        if v < menor:
-            menor = v
-            pp = pos
+        if valores[val] > maior:
+            maior = valores[val]
+        if valores[val] < menor:
+            menor = valores[val]     
     ct += 1
 print(f'Os valores digitados foram {valores}')
 print(f'O maior numero foi {maior} digitado nas posições',end=' ')
