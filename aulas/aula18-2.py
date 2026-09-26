@@ -14,4 +14,4 @@ for pessoa in galera:
     else:
         print(f'{pessoa[0]} é menor de idade')
         med +=1
-print(f'O total de pessoa maior de idade foi {mad} e de pessoas menor de idade foi {med}')
+print(f'O total de pessoas maior de idade foi {mad} e de pessoas menor de idade foi {med}')

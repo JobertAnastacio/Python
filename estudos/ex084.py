@@ -1,23 +1,23 @@
-pessoas = list()
+teste = list()
 dados = list()
-maior = list()
-menor = list()
-quant = 0
+pesado = list()
+leve = list()
+cont = 0
 while True:
-    dados.append(str(input('Nome: ')))
-    dados.append(float(input('Peso [KG]: ')))
-    pessoas.append(dados[:])
-    dados.clear()
-    quant += 1
-    c = input('Quer continuar? ').upper()[0]
+    teste.append(str(input('Digite seu nome: ')))
+    teste.append(float(input('Digite seu peso: ')))
+    cont += 1
+    dados.append(teste[:])
+    teste.clear()
+    c = input('Quer continuar? ').strip().upper()[0]
     if c == 'N':
         break
-for p in pessoas:
-    if p[1] >= 100:
-        maior.append(p[0])
-    if p[1] <= 65:
-        menor.append(p[0])
+for peso in dados:
+    if peso[1] >= 100:
+        pesado.append(peso[0])
+    if peso[1] <= 60:
+        leve.append(peso[0])
+print(f'Foram cadastradas {cont} pessoas')
+print(f'As pessoas com mais de 100 kg foram:{pesado}')
+print(f'As pessoas com menos de 60kg foram: {leve}')
 
-print(f'Foram cadastradas {quant} pessoas')
-print(f'As pessoas mais pessadas (> 100 kg) foram : {maior[:]}')
-print(f'As pessoas mais leves (< 65 kg) foram: {menor}')
