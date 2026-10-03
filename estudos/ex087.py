@@ -1,4 +1,3 @@
-# imcompleto falta B e C
 m0 = list()
 m1 = list()
 m2 = list()
