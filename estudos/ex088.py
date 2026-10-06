@@ -1,4 +1,4 @@
-from random import sample
+from random import sample #sample sorteia sem repetir
 from time import sleep
 lista = list()
 jogos = int(input('Quantos jogos você quer sortear? '))
