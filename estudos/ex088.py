@@ -10,4 +10,11 @@ for jogo in range(0,jogos):
     print(f'Jogo {jogo+1}: {sorted(lista[jogo])}')
     sleep(1)
 print(f'-=-=-=-= < Boa sorte! > -=-=-=-=')
+print(f'O 1° jogo foi {sorted(lista[0])}')
+# outro jeito de sotear seria
+'''
+num = randit(1,60)
+if num not in lista:
+    lista.append(num)
 
+    '''
