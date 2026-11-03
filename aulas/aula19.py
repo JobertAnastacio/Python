@@ -19,4 +19,7 @@ for c in range(0,3):
     estado['uf'] = str(input('Unidade Federativa: '))
     estado['sigla'] = str(input('sigla do estado: '))
     brasil.append(estado.copy())
-print(brasil)
+for estd in brasil:
+    print()
+    for k,v in estd.items():
+        print(f'a {k} é {v}', end= ' ')
