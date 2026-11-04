@@ -11,11 +11,11 @@ print('Ranking Jogadores:')
 for v in jogadores.values():
     if jogadores["j1"] > v:
         ranking["j1"] = jogadores["j1"]
-    elif jogadores["j2"] > v:
+    if jogadores["j2"] > v:
         ranking["j2"] = jogadores["j2"]
-    elif jogadores["j3"] > v:
+    if jogadores["j3"] > v:
         ranking["j3"] = jogadores["j3"]
-    elif jogadores["j4"] > v:
+    if jogadores["j4"] > v:
         ranking["j4"] = jogadores["j4"]
 ct = 1
 for k,v in ranking.items():
