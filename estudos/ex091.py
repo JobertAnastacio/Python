@@ -1,3 +1,4 @@
+# incompleto
 from random import randint
 from time import sleep
 jogadores = dict()
@@ -30,3 +31,4 @@ ct = 1
 for k,v in ranking.items():
     print(f'   {ct}° lugar: {k} com {v}')
     ct += 1
+    # sleep(1)
