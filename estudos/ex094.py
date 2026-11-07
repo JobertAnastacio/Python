@@ -2,6 +2,7 @@ dados = dict()
 cadastros = list()
 mulheres = list()
 totalpessoas = 0
+acimamedia = list()
 ct = 0 #para somar as idades pra depois fazer a media
 while True:
     dados['nome'] = str(input('Nome: '))
@@ -22,3 +23,11 @@ print(f'- A média de idade foi {medidade:.2f}')
 print(f'- As mulheres foram:', end=' ')
 for c in mulheres:
     print(c, end=' ')
+print()
+print('A lista de pessoas que estão com a idade acima da média são: ')
+for c in cadastros:
+    if c['idade'] > medidade:
+        acimamedia.append(c)
+for c in acimamedia:
+    print(f'Nome = {c['nome']}, sexo = {c['sexo']}, idade = {c['idade']}')
+
