@@ -19,8 +19,10 @@ dados['nome'] = str(input('Nome: '))
 dados['media'] = float(input(f'Média de {dados["nome"]}: '))
 if dados['media'] >= 7:
     dados['Situação'] = 'APROVADO'
+elif 7 > dados['media'] >= 5:
+    dados['Situação'] = 'RECUPERAÇÃO'
 else:
     dados['Situação'] = 'REPROVADO'
 for k,v in dados.items():
-    print(f'{k} é igual a {v}')
+    print(f'- {k} é igual a {v}')
     
