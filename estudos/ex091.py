@@ -12,7 +12,7 @@ for c in range (1,5):
 print('-=-='*13) 
 print('Ranking Jogadores:')
 sleep(1)
-ranking = sorted(jogadores.items(), key=itemgetter(1), reverse = True)#se for zero ordem de chave, e se for 1 ordem de valor
+ranking = sorted(jogadores.items(), key=itemgetter(1), reverse = True)#se for zero ordem de chave (k), e se for 1 ordem de valor(v)
 ct = 1
 for v in ranking:
     print(f'   {ct}° lugar: {v[0]} com {v[1]}')

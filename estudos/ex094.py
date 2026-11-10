@@ -7,6 +7,9 @@ ct = 0 #para somar as idades pra depois fazer a media
 while True:
     dados['nome'] = str(input('Nome: '))
     dados['sexo'] = str(input('Sexo [M/F]: ')).upper()[0]
+    while dados['sexo'] not in 'MF':
+        print('Por favor, digite apenas MASCULINO ou FEMININO')
+        dados['sexo'] = str(input('Sexo [M/F]: ')).upper()[0]
     dados['idade'] = int(input('Idade: '))
     ct += dados['idade']
     totalpessoas += 1
@@ -14,6 +17,9 @@ while True:
     if dados['sexo'] == 'F':
         mulheres.append(dados['nome'])
     cont = input(('Quer continuar ? ')).upper()[0]
+    while cont not in 'SN':
+        print('Por favor, digite apenas SIM ou NÃO')
+        cont = input(('Quer continuar ? ')).upper()[0]
     if cont == 'N':
         break
 medidade = ct/totalpessoas

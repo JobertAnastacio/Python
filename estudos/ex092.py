@@ -11,8 +11,8 @@ else:
     cadastro['ctps'] = carteira
     anocontrato = int(input('Digite o ano em que você foi contratado: '))
     cadastro['contrataçao'] = anocontrato
-    cadastro['salario'] = float (input('Qual seu salário: R$'))
-    cadastro['aposentadoria'] = (anocontrato+35)- anopessoa
+    cadastro['salario'] = float (input('Qual seu salário: R$ '))
+    cadastro['aposentadoria'] = (anocontrato + 35)- anopessoa
 print('-='*15)
 for k,v in cadastro.items():
     print(f'{k} é igual a {v}')
