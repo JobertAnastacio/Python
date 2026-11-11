@@ -10,7 +10,7 @@ for c in range(0,partidas):
     ct += axl #para faciliar poderia usar sum(ngols)
     ngols.append(axl)
 dados['gols'] = ngols[:]
-dados['total'] = ct
+dados['total'] = ct #poderia ser sum(ngols) pq essa função soma os valores da lista
 print('-=-='*10)
 for k,v in dados.items():
     print(f'O campo {k} tem valor {v}.')
