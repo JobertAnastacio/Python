@@ -37,16 +37,16 @@
 # contador(2,6,4,8,9)
 # contador(1,0,5)
 # contador(2,6,0,8,9,20)
-def dobra(lst):
-    pos = 0
-    while pos < len(lst):
-        lst[pos] *= 2
-        pos += 1
+# def dobra(lst):
+#     pos = 0
+#     while pos < len(lst):
+#         lst[pos] *= 2
+#         pos += 1
 
 
-valores = [7,5,6,7,8,3,4]
-dobra(valores)
-print(valores)
+# valores = [7,5,6,7,8,3,4]
+# dobra(valores)
+# print(valores)
 
 
 def soma(*valores):
@@ -56,5 +56,5 @@ def soma(*valores):
     print(f'somando os valores {valores} temos {s}' )
 
 
-soma(9,5,7)
+soma(9,5,7,9,9)
 soma(1,3,4)
